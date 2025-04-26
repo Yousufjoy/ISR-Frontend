@@ -28,11 +28,16 @@ interface TextImageSection {
   id: number;
   title: string;
   subtitle: string;
-  buttonText?: string;
-  buttonLink?: string;
+  richText?: unknown;
+  features?: FeatureItem[];
+  button?: {
+    buttonText: string;
+    buttonLink: string;
+  }[];
   image: StrapiImage | null;
   reversed?: boolean;
 }
+
 
 interface FeatureItem {
   id: number;
@@ -70,6 +75,8 @@ interface CallToActionSection {
   id: number;
   title: string;
   subtitle: string;
+  image: StrapiImage | null;
+  features?: FeatureItem[];
   buttonText: string;
   buttonLink: string;
   secondaryButtonText?: string;
@@ -86,6 +93,8 @@ interface TickerSection {
   __component: "sections.ticker";
   id: number;
   items: TickerItem[];
+  speed?: number;
+  direction?: "forward" | "reverse";
 }
 
 // Union type for all section types

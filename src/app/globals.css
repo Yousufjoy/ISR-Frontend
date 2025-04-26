@@ -44,4 +44,6 @@ body {
   background: var(--background); /* #0a0a0a */
   color: var(--foreground); /* #ffffff */
   font-family: Arial, Helvetica, sans-serif;
+
+ 
 }
