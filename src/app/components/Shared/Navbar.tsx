@@ -45,7 +45,7 @@ export default function Navbar() {
             USER2
           </Link>
           <button className="text-white hover:text-gray-300 border-r border-gray-600 pr-2 lg:pr-6 flex items-center gap-1">
-            <span className="hidden lg:inline">GIFT MODAL</span>
+            <span className="hidden lg:inline ">GIFT MODAL</span>
             <span className="lg:hidden">GIFT</span>
           
           </button>
